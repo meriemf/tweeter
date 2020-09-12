@@ -15,3 +15,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+## Screenshots
+![Home page](https://github.com/meriemf/tweeter/blob/master/docs/home-page.png)
+![Create tweet](https://github.com/meriemf/tweeter/blob/master/docs/create-tweet.png)
+![New-tweet-displayed](https://github.com/meriemf/tweeter/blob/master/docs/new-tweet-displayed.png)
