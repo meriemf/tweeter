@@ -5,21 +5,29 @@
  */
 html {
   box-sizing: border-box;
+
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
-
 body {
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: lightgray;
+  font-family: 'Source Sans Pro';
+  font-weight: 700;
   font-size: 24px;
+  margin-bottom:10px;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+.container {
+  width:90%;
+  background-color: lightgray;
+  margin: auto;
+  align-items: center;
+  padding-top: 10px;
+}
+
+@media all and (min-width: 1024px) {
+  }
+  

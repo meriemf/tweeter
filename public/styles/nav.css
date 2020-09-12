@@ -1,0 +1,37 @@
+nav {
+  height: 120px;
+  width: 100%;
+  color:  #ffffff;
+  background-color:#DFA675;
+  background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  padding: 1em;
+  position:fixed;
+  top: 0;
+
+}
+.logo {
+  font-family: Bungee;
+  font-size:xx-large;
+}
+
+.newTweet {
+  font-weight: normal;
+}
+.arrow {
+  border: solid red;
+  border-width: 0 5px 5px 0;
+  display:inline-block;
+  padding: 5px;
+  transform: rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  
+}
+@media all and (min-width: 1024px) {
+  nav {
+  background-color: darkblue;
+  }
+  
+}

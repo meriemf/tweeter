@@ -1,0 +1,95 @@
+article.tweet{
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+  margin-top: 20px;
+  opacity:0.7;
+  width: 100%;  
+}
+article.tweet:hover {
+  box-shadow: 4px 4px 8px blue;  
+  opacity: 1;
+}
+article.tweet header {
+  display: flex;
+  flex-direction: row;
+  background-color:lightgray;
+  background-image: none;
+  margin-top: 10px;
+  height: 50%;
+}
+article.tweet a{
+  margin-left: auto;
+  padding: 10px;
+}
+article.tweet textarea {
+  border: solid black;
+  background-color: lightgrey;
+  border-width: 0px 0px 3px  0px;
+  display:flex;
+  width:99%;
+  margin: auto;
+}
+
+#creation-date {
+margin-left: 10px
+}
+
+#like-button {
+  float: right;
+  margin-right: 10px;
+}
+#error-no-content {
+  
+  border-color:red;
+  color : red;
+  background-image: url('https://i.imgur.com/GnyDvKN.png');
+  border: 4px solid;
+  margin: 10px 0px;
+  padding: 15px 10px 10px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  display: none; 
+}
+
+#error-content-too-long {
+
+  border-color:red;
+  color : red;
+  background-image: url('https://i.imgur.com/GnyDvKN.png');
+  border: 4px solid;
+  margin: 10px 0px;
+  padding: 15px 10px 10px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  display: none; 
+}
+
+@media all and (min-width:1024px) {
+
+  article.tweet {
+    float: right;
+    margin-right: 10px;
+    width: 50%;
+  }
+  .new-tweet.form {
+    width: 50%;
+    background-color: lightsalmon;
+    float:right;
+    margin-right: 10px;
+  }
+  .form{  
+    float: right;
+    width: 48%;
+    margin-top: 10px;
+    margin-left: 30%;
+    margin-right: 10px;
+    padding: 10px;
+    position: relative;
+  }
+  #article.tweet textarea {
+    width:50%;
+    float: right;
+  }
+   
+}
