@@ -12,12 +12,13 @@ background-color:lightgray;
   margin: auto;
 }
 .counter {
-/*  align-content: center;*/
-font-family: Bungee;
-font-weight: 400;
-justify-content: flex-end;
-display:flex;
-padding-top: 5px;
+
+  font-family: Bungee;
+  font-weight: 400;
+  justify-content: flex-end;
+  display:flex;
+  padding-top: 5px;
+
 }
 .submit {
   background-color: darkblue;

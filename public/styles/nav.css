@@ -20,6 +20,14 @@ nav {
 .newTweet {
   font-weight: normal;
 }
+.newTweet-btn {
+  
+  font-size:24px;
+  color:red;
+  background-color: transparent;
+  border:transparent;
+
+}
 .arrow {
   border: solid red;
   border-width: 0 5px 5px 0;

@@ -3,9 +3,9 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- add font Bungee and Source sans pro-->
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet"> 
@@ -33,7 +33,9 @@
       <span class="logo">Tweeter</span>
       <span>
         <a class ="newTweet"><strong>Write</strong> a new tweet</a>
-        <p><i class = "arrow"></i></p>
+        <button class="newTweet-btn"><i class="fa fa-angle-double-down"></i></button>
+        
+        <!--<p><i class = "arrow"></i></p>-->
       </span>
     </nav>
     <header>
@@ -49,28 +51,31 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
+        
         <div id="error-no-content" >
           <p>No text is entered !!</p>
         </div>
+        
         <div id="error-content-too-long" >
           <p>Text is too long !!</p>
         </div>
+        
         <div class="form">
-        <form action="/tweets/" method="POST" enctype="application/x-www-form-urlencoded">
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text"></textarea>
-          <div>
-            <button class= "submit" type="submit">Tweet</button>           
-            <output id="counter" name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
+          <form action="/tweets/" method="POST" enctype="application/x-www-form-urlencoded">
+              <label for="tweet-text">What are you humming about?</label>
+              <textarea name="text" id="tweet-text"></textarea>
+              <div>
+                  <button class= "submit" type="submit">Tweet</button>           
+                  <output id="counter" name="counter" class="counter" for="tweet-text">140</output>
+              </div>
+          </form>
         </div>
+      
       </section>
       <!--Add the container for the tweets-->
       <section>
         <div id="tweet-container">
         </div>
-        
       </section>
     </main>
 

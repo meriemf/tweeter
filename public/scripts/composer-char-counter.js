@@ -1,21 +1,18 @@
-i = 0;
-$(document).ready(function(){
-  $("textarea").keydown(function(key) {
-    if (key.keyCode === 8) {
-      i -=1;
-      if (i >= 0) {
-        $("#counter").text(140 - i);
 
-      }
+$(document).ready(function() {
+  let textareaValue = $("textarea").val();
+  $("textarea").on("change keyup paste", function() {
+    let currentVal = $(this).val();
+    if (currentVal === textareaValue) {
+      return; 
     }
-   })
-  $("textarea").keypress(function(){
-    i += 1;
-    if (i > 140) {
-      $("#counter").css("color", "red");
+    let Count = 140 - currentVal.length;
+    if (Count < 0) {
+      $("#counter").css('color', 'red');
+    } else {
+      $("#counter").css('color', 'inherit');
     }
-    $("#counter").text(140-i);
+    $("#counter").html(Count);
+    textareaValue = currentVal;
   });
-
-  
 });
